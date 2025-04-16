@@ -11,11 +11,23 @@ body {
     line-height: 1.6;
 }
 /* Header section */
+
 header {
     background-color: #0d1b2a;
     color: #fff;
     padding: 2rem 2rem;
     text-align: center;
+    position: relative;
+}
+
+.header-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+  .header-paragraph {
+    font-size: 1.2rem;
+    margin: 1rem 0;
 }
 /* Header - call to action button */
 .cta {
@@ -28,6 +40,26 @@ header {
     text-decoration: none;
     font-weight: bold;
 }
+
+.social-links {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    text-decoration: none;
+  }
+  
+  .social-links img {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.3s ease;
+    filter: invert(100%);
+  }
+  
+  .social-links a:hover img {
+    transform: scale(1.2);
+  }
+
 /* all sections  */
 section {
     padding: 1rem 2rem;
