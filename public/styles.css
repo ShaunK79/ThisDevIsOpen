@@ -85,3 +85,10 @@ form button {
     font-size: 1rem;
     cursor: pointer;
 }
+
+footer {
+    background-color: #14213d;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
