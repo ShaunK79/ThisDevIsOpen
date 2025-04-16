@@ -103,6 +103,14 @@ h2 {
     position: relative;
 }
 
+.skills-column li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #00bcd4;
+    font-weight: bold;
+}
+
 
 form {
     display: flex;
