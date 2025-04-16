@@ -40,7 +40,7 @@ h2 {
 }
 
 #animation {
-    padding: 1rem;
+    padding: 2rem;
     background-color: #e0f7fa;
     border-radius: 1rem;
     text-align: center;
@@ -52,23 +52,40 @@ h2 {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 1.5rem;
-    font-size: 1.5rem;
-    margin-top: 2rem;
-    transition: all 0.5s ease-in-out;
+    gap: 2rem;
+    
 }
 /* electrician, learning, developer */
 .step {
     background-color: #fca311;
-    padding: 1rem 1.5rem;
+    color: #111;
+    padding: 1rem;
     border-radius: 1rem;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     font-weight: bold;
-    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 160px;
+}
+
+.step p {
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
 }
 /* arrows */
 .arrow {
     font-size: 2rem;
+    color: #333;
+}
+
+@media screen and (max-width: 768px) {
+    .animation-container {
+        flex-direction: column;
+    }
+    .arrow {
+        transform: rotate(90deg);
+    }
 }
 
 /* animations */
