@@ -57,12 +57,52 @@ h2 {
     font-size: 2rem;
 }
 
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
+#skills {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 1rem;
     margin-top: 1rem;
 }
+
+.skills-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.skills-column {
+    flex: 1 1 300px;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    transition: transform 0.3s ease;
+}
+
+.skills-column:hover {
+    transform: translate(-5px);
+}
+
+.skills-column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #333;
+    border-left: 4px solid #00bcd4;
+    padding-left: 0.5rem;
+}
+
+.skills-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.skills-column li {
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    position: relative;
+}
+
 
 form {
     display: flex;
