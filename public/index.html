@@ -1,80 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Styles and JS links -->
-    <link rel="stylesheet" href="/Users/shaunalexanderkriel/ThisDevIsOpen/public/styles.css">
+    <link
+      rel="stylesheet"
+      href="/Users/shaunalexanderkriel/ThisDevIsOpen/public/styles.css"
+    />
     <script src="/Users/shaunalexanderkriel/ThisDevIsOpen/public/animation.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
     <title>Hire Me - From Electrician to Developer!</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Header Section -->
     <header>
-        <h1>⚡ From Sparks to Syntax</h1>
-        <p>Hi, I'm Shaun - I'm open to work as a Junior Software Developer/ Engineer</p>
-        <a href="#contact" class="cta">Hire Me</a>
+      <h1>⚡ From Sparks to Syntax</h1>
+      <p>
+        Hi, I'm Shaun - I'm open to work as a Junior Software Developer/
+        Engineer
+      </p>
+      <a href="#contact" class="cta">Hire Me</a>
     </header>
     <!-- Animation Section -->
     <section id="animation">
-        <h2>My Journey</h2>
-        <div class="animation-container">
-            <div class="step electrician animate-pop">&#128119 Electrician</div>
-            <div class="arrow animate-bounce">➡️</div>
-            <div class="step learner animate-pulse">📖 🗯️</div>
-            <div class="arrow animate-bounce delay">➡️</div>
-            <div class="step developer animate-pop">💻 Developer</div>
+      <h2>My Journey</h2>
+      <div class="animation-container">
+        <div class="step">
+          <lottie-player
+            src="https://assets7.lottiefiles.com/packages/lf20_zrqthn6o.json"
+            background="transparent"
+            speed="1"
+            style="width: 100px; height: 100px"
+            loop
+            autoplay
+          >
+          </lottie-player>
+          <p>Electrician</p>
         </div>
+
+        <div class="arrow">➡️</div>
+
+        <div class="step">
+          <lottie-player
+            src="https://assets10.lottiefiles.com/packages/lf20_qp1q7mct.json"
+            background="transparent"
+            speed="1"
+            style="width: 100px; height: 100px"
+            loop
+            autoplay
+          ></lottie-player>
+          <p>Learning</p>
+        </div>
+
+        <div class="arrow">➡️</div>
+
+        <div class="step">
+          <lottie-player
+            src="https://assets2.lottiefiles.com/packages/lf20_4kx2q32n.json"
+            background="transparent"
+            speed="1"
+            style="width: 100px; height: 100px"
+            oop
+            autoplay
+          ></lottie-player>
+          <p>Developer</p>
+        </div>
+      </div>
     </section>
     <!-- Skills Section -->
     <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-wrapper">
-         <div class="skills-column">
-            <h3>🛠️ Technica Skills</h3>
-            <ul>
-                <li> HTML, CSS, JavaScript</li>
-                <li> Node.js</li>
-                <li> Git & GitHub, Dev Tools</li>
-                <li> Browser Dev Tools</li>
-                <li> Responsive Design, Clean Code</li>
-            </ul>
-         </div>
-         <div class="skills-column">
-            <h3>💡 Soft Skills</h3>
-            <ul>
-                <li> Project Management</li>
-                <li> Teamwork & Leadership</li>
-                <li> Critical Thinking</li>
-                <li> Problem Solving</li>
-                <li> Effective Communication</li>
-            </ul>
-         </div>
+      <h2>Skills</h2>
+      <div class="skills-wrapper">
+        <div class="skills-column">
+          <h3>🛠️ Technica Skills</h3>
+          <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Node.js</li>
+            <li>Git & GitHub, Dev Tools</li>
+            <li>Browser Dev Tools</li>
+            <li>Responsive Design, Clean Code</li>
+          </ul>
         </div>
+        <div class="skills-column">
+          <h3>💡 Soft Skills</h3>
+          <ul>
+            <li>Project Management</li>
+            <li>Teamwork & Leadership</li>
+            <li>Critical Thinking</li>
+            <li>Problem Solving</li>
+            <li>Effective Communication</li>
+          </ul>
+        </div>
+      </div>
     </section>
     <!-- Skills Section -->
     <section id="growth">
-        <h2>Always Growing</h2>
-        <p>I'm always keen on learning new languages, technologies and tools. I love taking on new challenges and evolving as a developer everyday</p>
+      <h2>Always Growing</h2>
+      <p>
+        I'm always keen on learning new languages, technologies and tools. I
+        love taking on new challenges and evolving as a developer everyday
+      </p>
     </section>
     <!-- Contact Section -->
     <section id="contact">
-        <h2>Let's Chat</h2>
-        <form id="funForm">
-            <label for="name">Please tell me your name..</label>
-            <input type="text" id="name" name="name" placeholder="e.g. Sarah from Tech Inc" required />
+      <h2>Let's Chat</h2>
+      <form id="funForm">
+        <label for="name">Please tell me your name..</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="e.g. Sarah from Tech Inc"
+          required
+        />
 
-            <label for="message">What's the opportunity?</label>
-            <textarea name="message" id="message" placeholder="Tell me some exciting news!" required></textarea>
+        <label for="message">What's the opportunity?</label>
+        <textarea
+          name="message"
+          id="message"
+          placeholder="Tell me some exciting news!"
+          required
+        ></textarea>
 
-            <button type="submit">🚀 Send & Connect</button>
-        </form>
+        <button type="submit">🚀 Send & Connect</button>
+      </form>
     </section>
     <!-- Footer  -->
     <footer>
-        <p>Made with ☕ and 💻 | <a href="https://github.com/ShaunK79" class="links" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/shaun-kriel-0329b3a1/" class="links" target="_blank">LinkedIn</a></p>
+      <p>
+        Made with ☕ and 💻 |
+        <a href="https://github.com/ShaunK79" class="links" target="_blank"
+          >GitHub</a
+        >
+        |
+        <a
+          href="https://www.linkedin.com/in/shaun-kriel-0329b3a1/"
+          class="links"
+          target="_blank"
+          >LinkedIn</a
+        >
+      </p>
     </footer>
-
-    
-</body>
+  </body>
 </html>
