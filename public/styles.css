@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #0d1b2a;
+    color: #fff;
+    padding: 2rem 2rem;
+    text-align: center;
+}
+/* call to action button */
+.cta {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #fca311;
+    color: #0d1b2a;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* all sections  */
+section {
+    padding: 3rem 2rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    color: #14213d;
+}
+
+.animation-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+/* electrician, learning, developer */
+.step {
+    background-color: #e5e5e5;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+/* arrows */
+.arrow {
+    font-size: 2rem;
+}
+
