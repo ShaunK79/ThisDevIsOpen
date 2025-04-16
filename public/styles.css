@@ -10,14 +10,14 @@ body {
     color: #333;
     line-height: 1.6;
 }
-
+/* Header section */
 header {
     background-color: #0d1b2a;
     color: #fff;
     padding: 2rem 2rem;
     text-align: center;
 }
-/* call to action button */
+/* Header - call to action button */
 .cta {
     display: inline-block;
     margin-top: 1rem;
@@ -30,7 +30,7 @@ header {
 }
 /* all sections  */
 section {
-    padding: 3rem 2rem;
+    padding: 1rem 2rem;
     max-width: 800px;
     margin: auto;
 }
@@ -48,7 +48,7 @@ h2 {
 }
 /* electrician, learning, developer */
 .step {
-    background-color: #e5e5e5;
+    background-color: #fca311;
     padding: 1rem 2rem;
     border-radius: 10px;
 }
@@ -77,8 +77,8 @@ form input, form textarea {
 }
 
 form button {
-    background-color: #0d1b2a;
-    color: #fff;
+    background-color: #fca311;
+    color: #333;
     padding: 1rem;
     border: none;
     border-radius: 5px;
@@ -90,5 +90,9 @@ footer {
     background-color: #14213d;
     color: white;
     text-align: center;
-    padding: 2rem;
+    padding: 1rem 2rem;
+}
+
+.links {
+    color: #fca311;
 }
