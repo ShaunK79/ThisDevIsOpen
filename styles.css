@@ -77,25 +77,6 @@ header {
   .social-links a:hover img {
     transform: scale(1.2);
   }
-/* .social-links {
-    margin-top: 1.5rem;
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    text-decoration: none;
-    flex-wrap: wrap;
-  }
-  
-  .social-links img {
-    width: 28px;
-    height: 28px;
-    transition: transform 0.3s ease;
-    filter: invert(100%);
-  }
-  
-  .social-links a:hover img {
-    transform: scale(1.2);
-  } */
 
 /* all sections  */
 section {
@@ -200,6 +181,60 @@ h2 {
       transform: rotate(90deg);
     }
   }
+
+  .lottie-container {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .custom-tooltip {
+    visibility: hidden;
+    position: absolute;
+    z-index: 100;
+    bottom: 125%;
+    left: 50%;
+    width: 250px;
+    transform: translateX(-50%) scale(0.8);
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 8px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  
+  /* Arrow pointing down */
+  .custom-tooltip:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -8px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+  }
+  
+  /* Animation effect on hover */
+  .lottie-container:hover .custom-tooltip {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-50%) scale(1.1);
+  }
+  
+  /* Adding some style to the Developer text */
+  .lottie-container p {
+    margin-top: 5px;
+    font-weight: bold;
+  }
+
+  
 
 /* skills section */
 #skills {
