@@ -1,24 +1,24 @@
 
-    document.getElementById('funForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-    
-    // Get button and show loading state
-    const button = this.querySelector('button');
-    const originalText = button.innerHTML;
-    button.disabled = true;
-    button.innerHTML = 'Sending...';
-    
-    // Get form data
-    const formData = new FormData(this);
-    
-    // Submit to Formspree
-    fetch(this.action, {
-      method: 'POST',
-      body: formData,
-      headers: {
-        'Accept': 'application/json'
-      }
-    })
+document.getElementById('funForm').addEventListener('submit', function (event) {
+  event.preventDefault();
+
+  // Get button and show loading state
+  const button = this.querySelector('button');
+  const originalText = button.innerHTML;
+  button.disabled = true;
+  button.innerHTML = 'Sending...';
+
+  // Get form data
+  const formData = new FormData(this);
+
+  // Submit to Formspree
+  fetch(this.action, {
+    method: 'POST',
+    body: formData,
+    headers: {
+      'Accept': 'application/json'
+    }
+  })
     .then(response => {
       if (response.ok) {
         // Success
@@ -40,4 +40,6 @@
         button.disabled = false;
       }, 3000);
     });
-  });
+});
+
+console.log('what');
