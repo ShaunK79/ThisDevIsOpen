@@ -57,12 +57,33 @@ header {
     font-weight: bold;
 }
 /* social links */
+
 .social-links {
     margin-top: 1.5rem;
     display: flex;
     justify-content: center;
     gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .social-links a img {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.3s ease;
+    filter: invert(100%);
+    cursor: pointer;
+  }
+  
+  .social-links a:hover img {
+    transform: scale(1.2);
+  }
+/* .social-links {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
     text-decoration: none;
+    flex-wrap: wrap;
   }
   
   .social-links img {
@@ -74,7 +95,7 @@ header {
   
   .social-links a:hover img {
     transform: scale(1.2);
-  }
+  } */
 
 /* all sections  */
 section {
